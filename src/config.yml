@@ -1,0 +1,81 @@
+############################################
+############ PLUGIN BY NUMBTUS #############
+########    Numbtus Development    #########
+############################################
+#
+# You can find information here:
+# https://docs.numbtus.fr/v/playerlevel
+# Quest exemple:
+#   '1':  /here the id of the quest/
+#     name: "Here the name of the quest"
+#     level: 5 /5, 10 or 20/
+#     difficulty: 1 /1, 2 or 3/
+#     inventory:
+#       position: 10 /postion of the item in the quest inventory (0-26)/
+#       material: OBSIDIAN /Material that represent the quest in the inventory/
+#     setting:
+#       type: BREAK  /Quest Type, check all types available on the doc/
+#       material: OBSIDIAN /settings of the type/
+#
+#
+# Material list in 1.8.9:
+# https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/Material.html
+#
+
+
+# Prefix before all plugin messages
+prefix: "&7&l[&9&lPlayer&b&lLevel&7&l] "
+# MONEY or POINTS (Money need Vault dependency, POINTS are given each time you level up a quest)
+#Reward system also change competence bought system.
+rewardSystem: POINTS
+# Config this section just if you have set rewardSystem to MONEY
+# Money giving each time you win a level
+moneyPerLevel: 1000
+# Set it to true if you want money wining to be multiply by the level.
+# Exemple: If moneyPerLevel is set to 1000, when a player level up, he will be win: newlevel * 1000 of money
+# if he level up to level 5, he will win 5000
+multiplyByLevel: true
+# Item Material that is used to fill inventory slot in all plugin gui.
+# set it to null to not fill slot.
+inventoryFillingItem: STAINED_GLASS_PANE
+# If you want to disable metrics:
+metrics: true
+
+quest:
+  '1':
+    name: "&aBreak Obsidian | Quest exemple"
+    level: 20
+    difficulty: 1
+    inventory:
+      position: 10
+      material: OBSIDIAN
+    setting:
+      type: BREAK
+      material: OBSIDIAN
+  '2':
+    name: "&aPlace Obsidian | Quest exemple"
+    level: 10
+    difficulty: 1
+    inventory:
+      position: 10
+      material: OBSIDIAN
+    setting:
+      type: PLACE
+      material: OBSIDIAN
+competences:
+  '1':
+    name: "&bCommand competence exemple"
+    desc: "&7+&a2.5&e% &7of chances to execute a command."
+    maxLevel: 5
+    price: 1 # in points or money depends of rewardSystem
+    inventory:
+      position: 10
+      material: OBSIDIAN
+    type: COMMAND
+    settings:
+      command: broadcast &bEnjoy %player% #Command that will be execute when you win xp in a quest; without /
+      percentage: 2.5 #Chance to execute command (set 100 to execute command every time, may cause lag)
+
+
+
+version: 4

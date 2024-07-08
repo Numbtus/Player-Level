@@ -1,0 +1,33 @@
+# You can find orginal lang file here:
+# https://docs.numbtus.fr/v/playerlevel
+# Vous pouvez egalement trouvé le fichier lang en francais sur le lien ci-dessus.
+#
+#
+
+inventory:
+  name: "&aPlayer Level"
+  competences: "&aCompetences"
+  competences_desc: "&7Show your competences and &aupgrade &7it"
+  quest: "&eYour quests"
+  quest_desc: "&7Show your quests"
+  yourProgress: "&aYour progress: &e"
+  competencePoints: "&aYour competence points: &e"
+  yourLevel: "&aYour level: &e"
+questInv:
+  name: "&aYour quests"
+competencesInv:
+  name: "&6Your competences"
+quest:
+  maxPalier: "&a&lCONGRATULATION ! &e&lYou have reach the &6&lmaximum &e&llevel of your quests !"
+  newPalier: "&a&lCONGRATULATION, &ayou have reach the level &e&l%newPalier% &aof your quest &e&l%questName% &7(&6#&e%questId%&7)"
+other:
+  noPermission: "You do not have any permission"
+  newLevel: "&a&lCONGRATULATION, &6you have reach level &e%level%"
+  notEnough: "&cYou doesn't have enough competences points / money!"
+  newCompetencesLevel: "&a&lCONGRATULATION, &ayou have upgrade our competence &6%competence% &ato level &e%level%"
+  addProgressSender: "You have progress the quest %questId% of %progress% points for %player%"
+  addProgressReceive: "Your quest %questId% has been progress of %progress%"
+competenceMessages:
+  levelUp: "You have correctly upgrade the competence name %competencename%"
+  maxLevelReached: "&cYou have reach the max level of this competence"
+  notEnoughMoney: "&cYou doesn't have enough money to upgrade this competence"

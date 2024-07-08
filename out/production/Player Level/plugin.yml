@@ -1,0 +1,9 @@
+name: PlayerLevel
+version: 1.05
+author: Numbtus
+main: com.terrasia.playerlevel.Main
+commands:
+  level:
+    desc: opening player level gui
+  quest:
+    desc: open quest inventory
